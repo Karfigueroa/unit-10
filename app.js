@@ -17,7 +17,6 @@
 	var result = (askResult)
 	askResult(result)
 
-
 	function cTof(t){
 		var celTemp= (t *9 / 5 + 32)
 		return celTemp
@@ -32,14 +31,15 @@
 	}
 	var farTemp = (fToc)
 	fToc(farTemp)
+//stops working from here
 
-	function end(a, b){
-
+	function end(farTemp,celTemp){
+		var result = askResult()
 		if (result=="c"){
-		alert (`${b} in celcius`)
+		alert (`${farTemp} in celcius`)
 	  	}else if (result=="f"){
-		alert (`${a} in farenheight`)
+		alert (`${celTemp} in farenheight`)
 		}
 	}
-
-end(fToc())
+	end()
+//end(fToc())
